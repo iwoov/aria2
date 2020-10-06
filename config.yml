@@ -1,0 +1,9 @@
+tasks:
+  Anime:
+    rss: https://nyaa.si/?page=rss&c=1_0&f=0
+    accept_all: yes
+    aria2:
+        server: 127.0.0.1
+        port: 6800
+        secret: aca2429d69fc74802574
+        path: /root/downloads/
