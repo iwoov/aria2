@@ -26,7 +26,7 @@ class OutputAria2:
         'type': 'object',
         'properties': {
             'server': {'type': 'string', 'default': 'localhost'},
-            'port': {'type': 'integer', 'default': 6800},
+            'port': {'type': 'integer', 'default': 80},
             'secret': {'type': 'string', 'default': ''},
             'username': {'type': 'string', 'default': ''},  # NOTE: To be deprecated by aria2
             'password': {'type': 'string', 'default': ''},
