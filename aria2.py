@@ -46,7 +46,7 @@ class OutputAria2:
             userpass = '%s:%s@' % (username, password)
         else:
             userpass = ''
-        url = '%s%s:%s/rpc' % (userpass, server, port)
+        url = 'http://%s%s:%s/rpc' % (userpass, server, port)
         logger.debug('aria2 url: {}', url)
         logger.info('Connecting to daemon at {}', url)
         try:
@@ -75,7 +75,7 @@ class OutputAria2:
 
     def prepare_config(self, config):
         config.setdefault('server', 'localhost')
-        config.setdefault('port', 6800)
+        config.setdefault('port', 80)
         config.setdefault('username', '')
         config.setdefault('password', '')
         config.setdefault('secret', '')
